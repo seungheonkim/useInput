@@ -13,6 +13,8 @@ export default function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setNameArr([...nameArr, `${firstNameValue} ${lastNameValue}`]);
+    setFirstNameValue('');
+    setLastNameValue('');
   };
 
   return (
